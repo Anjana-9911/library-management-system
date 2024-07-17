@@ -3,5 +3,6 @@ git config --global user.name "yourName"
 
 git init -> Initialising repository
 git status => shows the branch, commited changes , untracked changes and recent commits
+git log -> Logs all the past commit info
 git add . -> Adding all changes to Staged area
 git commit -m "your message" -> Commits the staged changes 
