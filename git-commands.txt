@@ -1,0 +1,2 @@
+git init -> Initialising repository
+git add . -> Adding all changes to Staged area
