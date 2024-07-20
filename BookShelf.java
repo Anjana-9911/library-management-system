@@ -53,31 +53,24 @@ public class BookShelf {
         }
     }
 
-    public void printBookshelf() {
+    public List<Book> getBookList() {
         readFromFile();
-        for (Book book : books) {
-            System.out.println("Book Name: " + book.getBookName());
-            System.out.println("Author: " + book.getAuthor());
-            System.out.println("Publisher: " + book.getPublisher());
-            System.out.println("Price: " + book.getPrice());
-            System.out.println("ISBN: " + book.getIsbn());
-            System.out.println();
-        }
-        books.clear();
+        return new ArrayList<>(books);
     }
 
-    public static void main(String[] args) {
-        BookShelf bookshelf = new BookShelf();
 
-        // Add some books
-        Book book1 = new Book("", "", "", 69.69, "2345678901");
-        // Book book2 = new Book("Python Crash Course", "Jane Smith", "O'Reilly", 39.99,
-        // "2345678901");
-        // bookshelf.addBook(book1);
-        // bookshelf.addBook(book2);
+    // public static void main(String[] args) {
+    //     BookShelf bookshelf = new BookShelf();
 
-        bookshelf.removeBook(book1);
-        bookshelf.printBookshelf();
-    }
+    //     // Add some books
+    //     Book book1 = new Book("", "", "", 69.69, "2345678901");
+    //     // Book book2 = new Book("Python Crash Course", "Jane Smith", "O'Reilly", 39.99,
+    //     // "2345678901");
+    //     // bookshelf.addBook(book1);
+    //     // bookshelf.addBook(book2);
+
+    //     bookshelf.removeBook(book1);
+    //     bookshelf.printBookshelf();
+    // }
 
 }

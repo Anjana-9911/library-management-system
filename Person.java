@@ -4,9 +4,9 @@ import java.time.LocalDate;
 public class Person {
     private String personName;
     private String id;
-    private Integer aadharCard;
+    private String aadharCard;
 
-    public Person(String personName, String id, Integer aadharCard) {
+    public Person(String personName, String id, String aadharCard) {
         this.personName = personName;
         this.id = id;
         this.aadharCard = aadharCard;
@@ -28,11 +28,11 @@ public class Person {
         this.id = id;
     }
 
-    public Integer getAadharCard() {
+    public String getAadharCard() {
         return aadharCard;
     }
 
-    public void setAadharCard(Integer aadharCard) {
+    public void setAadharCard(String aadharCard) {
         this.aadharCard = aadharCard;
     }
     String borrowBook(Book book){
